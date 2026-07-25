@@ -1,6 +1,6 @@
-# Functional Requirements
+# Non-Functional Requirements
 
-Document ID: P06
+Document ID: P07
 
 Project: Trafico
 
@@ -8,128 +8,123 @@ Version: 1.0
 
 Status: Draft
 
+Prepared By: Santisoft Ltd
+
 Last Updated: July 2026
 
 ---
 
 # 1. Purpose
 
-This document defines the functional capabilities the Trafico platform must provide.
+This document defines the quality attributes the Trafico platform must achieve.
 
 ---
 
-# 2. Authentication
+# 2. Performance
 
-The system shall:
+The platform should:
 
-- Allow user registration.
-- Allow secure login.
-- Support password reset.
-- Support role-based authorization.
-
----
-
-# 3. Company Management
-
-The system shall:
-
-- Create companies.
-- Update company profiles.
-- Manage subscriptions.
-- Configure company settings.
+- Process messages within 2 seconds.
+- Support concurrent users.
+- Minimize dashboard loading time.
 
 ---
 
-# 4. User Management
+# 3. Availability
 
-The system shall:
+The platform should achieve:
 
-- Invite users.
-- Assign roles.
-- Suspend users.
-- Remove users.
-
----
-
-# 5. Customer Management
-
-The system shall:
-
-- Store customer information.
-- Display customer history.
-- Search customers.
+- 99.9% uptime.
+- Automatic recovery from failures.
+- High service availability.
 
 ---
 
-# 6. Supplier Management
+# 4. Scalability
 
-The system shall:
+The platform should support:
 
-- Create suppliers.
-- Assign suppliers.
-- Update supplier status.
-
----
-
-# 7. Conversation Management
-
-The system shall:
-
-- Create conversations.
-- Store conversation history.
-- Search conversations.
-- Archive conversations.
-- Close conversations.
+- Multiple companies.
+- Thousands of users.
+- Millions of stored messages.
+- Horizontal scaling.
 
 ---
 
-# 8. Messaging
+# 5. Reliability
 
-The system shall:
+The platform should:
 
-- Receive WhatsApp messages.
-- Forward messages.
-- Store message history.
-- Support media attachments.
-- Display delivery status.
+- Prevent message loss.
+- Retry failed deliveries.
+- Maintain data consistency.
 
 ---
 
-# 9. Leak Detection
+# 6. Security
 
-The system shall:
+The platform should:
 
-- Detect phone numbers.
-- Detect email addresses.
-- Detect URLs.
-- Detect social media usernames.
-- Block prohibited messages.
-- Notify operators.
-
----
-
-# 10. Dashboard
-
-The system shall:
-
-- Display active conversations.
-- Display analytics.
-- Display notifications.
-- Display operator activity.
+- Encrypt sensitive data.
+- Use HTTPS.
+- Implement JWT authentication.
+- Enforce role-based permissions.
+- Record audit logs.
 
 ---
 
-# 11. Reporting
+# 7. Maintainability
 
-The system shall generate reports for:
+The platform should:
 
-- Conversations
-- Operators
-- Leak attempts
-- Platform activity
+- Follow clean architecture.
+- Use modular components.
+- Maintain documentation.
+- Support automated testing.
+
+---
+
+# 8. Usability
+
+The platform should:
+
+- Be easy to learn.
+- Be responsive.
+- Require minimal training.
+
+---
+
+# 9. Compatibility
+
+The platform should support:
+
+- Modern web browsers.
+- WhatsApp Cloud API.
+- Desktop and tablet devices.
+
+---
+
+# 10. Monitoring
+
+The platform should provide:
+
+- Health checks.
+- Logging.
+- Metrics.
+- Error tracking.
+
+---
+
+# 11. Backup & Recovery
+
+The platform should:
+
+- Perform scheduled backups.
+- Support disaster recovery.
+- Restore data when required.
 
 ---
 
 # 12. Summary
 
-These functional requirements define the minimum behavior expected from the Trafico platform.
+These non-functional requirements define the quality standards that Trafico must meet throughout its lifecycle.
